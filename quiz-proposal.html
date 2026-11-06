@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0c100d">
+<title>Комерційна пропозиція — розробка квізів</title>
+<style>
+:root{--bg:#0c100d;--panel:#131914;--line:#26312a;--ink:#d7dfcc;--dim:#8d977f;--olive:#8fa05a;--khaki:#c9b77c;--field:#0a0e0b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,"SF Pro Text",system-ui,sans-serif;background-image:linear-gradient(rgba(143,160,90,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(143,160,90,.05) 1px,transparent 1px);background-size:32px 32px}
+a{color:inherit} .mono,.eyebrow,.section-id,.tag,.price-label,.button,.micro,.foot{font-family:ui-monospace,"SF Mono",Menlo,monospace}
+.stripe{height:6px;background:repeating-linear-gradient(-45deg,var(--khaki) 0 12px,var(--bg) 12px 24px)}
+.container{max-width:850px;padding:30px 26px 42px;margin:auto}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.eyebrow{color:var(--khaki);font-size:11px;letter-spacing:.12em;text-transform:uppercase}.top-right{font:11px ui-monospace,monospace;color:var(--dim);letter-spacing:.09em}
+.hero{padding:31px 0 25px}.tag{display:inline-flex;border:1px solid var(--khaki);color:var(--khaki);padding:4px 9px;font-size:10px;letter-spacing:.08em;margin-bottom:15px;text-transform:uppercase}
+h1{font-size:clamp(30px,5.5vw,46px);line-height:1.09;letter-spacing:-.035em;text-transform:uppercase;margin:0 0 12px;font-weight:700;max-width:700px}h1 span{color:var(--olive)}
+.lead{font-size:15px;color:var(--dim);max-width:660px;margin:0;line-height:1.6}
+.panel{border:1px solid var(--line);background:linear-gradient(var(--khaki),var(--khaki)) left top/16px 2px no-repeat,linear-gradient(var(--khaki),var(--khaki)) left top/2px 16px no-repeat,linear-gradient(var(--khaki),var(--khaki)) right bottom/16px 2px no-repeat,linear-gradient(var(--khaki),var(--khaki)) right bottom/2px 16px no-repeat,var(--panel);padding:22px 24px}
+.section-head{display:flex;gap:13px;align-items:baseline;margin:0 0 16px;padding-bottom:10px;border-bottom:1px solid var(--line)}.section-head h2{font-size:16px;line-height:1.25;text-transform:uppercase;letter-spacing:.035em;margin:0}.section-id{color:var(--khaki);font-size:12px;flex:none}
+.services{display:grid;grid-template-columns:1fr 1fr;column-gap:25px;row-gap:16px}.service{display:flex;gap:11px;align-items:flex-start}.service .n{font:11px ui-monospace,monospace;color:var(--olive);padding-top:3px;flex:none}.service b{display:block;font-size:13px;font-weight:600;line-height:1.4}.service p{margin:3px 0 0;font-size:12px;color:var(--dim);line-height:1.48}
+.pricing{margin-top:16px;display:grid;grid-template-columns:1.2fr 1fr;gap:12px}.price-card{padding:19px 21px;background:var(--panel);border:1px solid var(--line);min-height:161px;display:flex;flex-direction:column}.price-card.featured{border-color:var(--olive)}.price-head{display:flex;justify-content:space-between;gap:6px;align-items:baseline}.price-label{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--khaki)}.price{font-size:34px;font-weight:650;letter-spacing:-.04em;line-height:1.2;margin:12px 0 7px}.price span{font-size:16px;vertical-align:top;letter-spacing:0;margin-left:3px}.price-note{font-size:12px;color:var(--dim);margin:0;line-height:1.45}.hint{margin:10px 0 0;color:var(--dim);font-size:11px;line-height:1.45}
+.bottom{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-top:23px;border-top:1px solid var(--line);padding-top:22px}.contact h2{margin:0 0 4px;font-size:16px;text-transform:uppercase}.contact p{margin:0;font-size:12px;color:var(--dim)}.button{display:inline-flex;justify-content:center;align-items:center;background:var(--olive);color:#0c100d;text-decoration:none;text-transform:uppercase;font-size:12px;font-weight:700;letter-spacing:.04em;padding:13px 17px;min-width:188px;transition:background .2s}.button:hover{background:var(--khaki)}
+.foot{display:flex;justify-content:space-between;gap:16px;margin-top:28px;color:var(--dim);font-size:10px;letter-spacing:.08em}.print{border:0;background:none;color:var(--dim);font:inherit;cursor:pointer;padding:0;text-transform:uppercase;letter-spacing:inherit}.print:hover{color:var(--khaki)}
+@media(max-width:640px){.container{padding:19px 17px 26px}.top{padding-bottom:14px}.hero{padding:26px 0 22px}h1{font-size:32px}.lead{font-size:13.5px}.panel{padding:17px 15px}.section-head{margin-bottom:14px}.services{column-gap:12px;row-gap:14px}.service{gap:7px}.service b{font-size:12px}.service p{font-size:11px}.pricing{grid-template-columns:1fr 1fr;gap:9px}.price-card{padding:14px 12px;min-height:157px}.price-label{font-size:10px}.price{font-size:30px}.price-note{font-size:11px}.bottom{margin-top:21px;padding-top:17px}.button{min-width:auto;padding:12px;font-size:10px}.contact h2{font-size:14px}.contact p{font-size:11px}.foot{margin-top:20px}}
+@media(max-width:360px){.services{grid-template-columns:1fr}.price-card{min-height:180px}.price{font-size:27px}}
+@media print{@page{size:A4;margin:14mm}body{background:#fff!important;color:#141914;-webkit-print-color-adjust:exact;print-color-adjust:exact}.stripe{display:none}.container{max-width:none;padding:0}.panel,.price-card{background:#fff;border-color:#b7bdb2}.panel{background-image:none}.lead,.price-note,.service p,.hint,.contact p,.foot,.top-right{color:#58634c}.eyebrow,.tag,.section-id,.price-label{color:#657b30}.tag{border-color:#657b30}.service .n,h1 span{color:#657b30}.button{background:#8fa05a!important}.print{display:none}.hero{padding:22px 0}.bottom{margin-top:22px}.panel,.pricing,.bottom{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="stripe"></div>
+<main class="container">
+<header class="top"><div class="eyebrow">Digital / Development</div> <button class="print" type="button" onclick="window.print()">ДРУК / PDF ↗</button></header>
+<section class="hero">
+<div class="tag">Інтерактивні рішення для бізнесу</div>
+<h1>Розробка <span>квізів</span><br>під ключ</h1>
+<p class="lead">Індивідуальний квіз для сайту чи рекламної кампанії: допомагає відвідувачу обрати потрібне рішення, а бізнесу — отримати структуровану заявку з відповідями клієнта від реклами.</p>
+</section>
+<section class="panel" aria-labelledby="includes">
+<div class="section-head"><span class="section-id">[ 01 ]</span><h2 id="includes">Що входить у розробку</h2></div>
+<div class="services">
+<div class="service"><span class="n">01/</span><div><b>Сценарій та структура</b><p>Запитання, логіка проходження, форма заявки.</p></div></div>
+<div class="service"><span class="n">02/</span><div><b>Індивідуальний дизайн</b><p>Візуальний стиль згібно брендбуку і адаптація під мобільні.</p></div></div>
+<div class="service"><span class="n">03/</span><div><b>Верстка та програмування</b><p>Інтерактивні кроки, валідація, переходи.</p></div></div>
+<div class="service"><span class="n">04/</span><div><b>Встановлення на сайт</b><p>Розміщення та налаштування.</p></div></div>
+<div class="service"><span class="n">05/</span><div><b>Підключення інтеграцій</b><p>CRM або канал отримання заявок, UTM, аналітика.</p></div></div>
+<div class="service"><span class="n">06/</span><div><b>Тестування та запуск</b><p>Перевірка сценаріїв, форм і передавання заявок.</p></div></div>
+</div>
+</section>
+<section class="pricing" aria-label="Вартість послуг">
+<div class="price-card featured"><div class="price-head"><span class="price-label">[ 02 ] Новий квіз</span></div><div class="price">300<span>€</span></div><p class="price-note">Повна розробка з нуля: дизайн, програмування, інтеграції та запуск.</p></div>
+<div class="price-card"><div class="price-head"><span class="price-label">[ 03 ] Копія / адаптація</span></div><div class="price">100<span>€</span></div><p class="price-note">Адаптація готового квізу: оформлення, тексти, переклад, брендинг.</p></div>
+</section>
+<p class="hint">* Адаптація виконується на основі вже розробленого квізу зі збереженням його базової логіки. Нестандартні інтеграції та зміни функціональності узгоджуються окремо.</p>
+<section class="bottom"><div class="contact"><h2>Обговоримо ваш квіз?</h2><p>Напишіть у Telegram, щоб узгодити завдання.</p></div><a class="button" href="https://t.me/mak5kolis" target="_blank" rel="noopener noreferrer">Написати в Telegram ↗</a></section>
+</main>
+</body>
+</html>
