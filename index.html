@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f9f6">
+<title>ZIM Group — Розробка квізів</title>
+<style>
+:root{--ink:#17221d;--muted:#69766d;--accent:#2d704b;--line:#dfe6df;--paper:#fff;--bg:#f7f9f6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased;font-size:14px;line-height:1.5}a{color:inherit} .sheet{max-width:790px;margin:28px auto 48px;background:var(--paper);padding:48px 54px;box-shadow:0 14px 55px rgba(26,52,34,.055);border:1px solid #e9eee9} .top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:49px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.10em;font-size:13px}.mark{width:25px;height:25px;border:2px solid var(--accent);border-radius:7px;display:grid;place-items:center;color:var(--accent);font-size:13px;letter-spacing:-.1em}.tag{color:var(--muted);font-size:11px;letter-spacing:.1em;text-transform:uppercase}h1{font-size:clamp(30px,5vw,47px);line-height:1.07;letter-spacing:-.055em;margin:0 0 16px;font-weight:750;max-width:560px} .lead{font-size:15px;color:#506157;max-width:575px;margin:0}.rule{height:1px;background:var(--line);margin:34px 0 26px}.eyebrow{color:var(--accent);font-size:10px;letter-spacing:.13em;text-transform:uppercase;font-weight:750;margin-bottom:13px}h2{font-size:18px;line-height:1.25;letter-spacing:-.025em;margin:0 0 16px}.services{display:grid;grid-template-columns:1fr 1fr;gap:11px 25px}.item{display:flex;align-items:baseline;gap:10px;font-size:13px}.num{color:var(--accent);font-size:11px;font-weight:700;font-variant-numeric:tabular-nums}.pricing{display:grid;grid-template-columns:1fr 1fr;gap:12px}.price-card{border:1px solid var(--line);padding:20px 19px 18px;border-radius:9px;min-width:0}.price-card.main{border-color:#aacbb5;background:#f4f9f4}.ptitle{font-weight:750;font-size:13px}.pprice{font-size:30px;line-height:1.15;letter-spacing:-.05em;font-weight:780;margin:14px 0 9px;font-variant-numeric:tabular-nums}.pdesc{font-size:12px;color:#627268;line-height:1.48;margin:0}.note{font-size:11px;color:var(--muted);margin:12px 0 0}.examples{display:flex;gap:8px;flex-wrap:wrap}.example{padding:8px 12px;border:1px solid var(--line);border-radius:6px;font-size:12px;font-weight:650;text-decoration:none;transition:.2s}.example:hover{border-color:var(--accent);color:var(--accent)}.example span{color:var(--accent);margin-left:5px}.footer{border-top:1px solid var(--line);margin-top:26px;padding-top:15px;display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:11px}.footer strong{color:var(--ink)}.print{display:flex;justify-content:flex-end;max-width:790px;margin:0 auto 12px}.print button{border:1px solid var(--line);background:white;color:#405a49;border-radius:7px;padding:9px 12px;cursor:pointer;font-size:12px}.print button:hover{border-color:var(--accent)}
+@media(max-width:650px){body{background:white}.sheet{margin:0 auto;padding:25px 22px 28px;border:0;box-shadow:none}.top{margin-bottom:34px}.tag{font-size:9px}h1{font-size:35px;margin-bottom:12px}.lead{font-size:14px;line-height:1.55}.rule{margin:27px 0 24px}.services{gap:12px 12px}.item{font-size:12px;gap:7px;line-height:1.35}.pricing{gap:9px}.price-card{padding:15px 13px 14px}.ptitle{font-size:12px}.pprice{font-size:27px;margin:10px 0 7px}.pdesc{font-size:11px}.footer{margin-top:24px}.print{margin:15px 22px 0}.print button{font-size:11px;padding:7px 10px}}@media(max-width:365px){.sheet{padding-left:17px;padding-right:17px}h1{font-size:31px}.services{grid-template-columns:1fr 1fr}.price-card{padding:13px 10px}}
+@media print{@page{size:A4;margin:13mm}body{background:white}.sheet{margin:0;padding:9mm 10mm;border:0;box-shadow:none;max-width:none}.print{display:none}.top{margin-bottom:36px}.rule{margin:28px 0 22px}a{text-decoration:none}.price-card{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<div class="print"><button onclick="window.print()">Зберегти як PDF ↗</button></div>
+<main class="sheet">
+<header class="top"><div class="brand"><span class="mark">Z</span>ZIM GROUP</div><div class="tag">Комерційна пропозиція</div></header>
+<section>
+<div class="eyebrow">Digital інструменти для бізнесу</div>
+<h1>Інтерактивні квізи<br>під ключ.</h1>
+<p class="lead">Розробляємо квізи, які допомагають клієнту обрати потрібний продукт, а бізнесу — отримувати структуровані заявки з реклами та сайту.</p>
+</section>
+<div class="rule"></div>
+<section>
+<div class="eyebrow">Повний цикл розробки</div>
+<h2>Що входить у послугу</h2>
+<div class="services">
+<div class="item"><span class="num">01</span><span>Структура та сценарій запитань</span></div>
+<div class="item"><span class="num">02</span><span>Індивідуальний дизайн</span></div>
+<div class="item"><span class="num">03</span><span>Адаптивна HTML/CSS/JS верстка</span></div>
+<div class="item"><span class="num">04</span><span>Встановлення на сайт</span></div>
+<div class="item"><span class="num">05</span><span>CRM, заявки, UTM та аналітика*</span></div>
+<div class="item"><span class="num">06</span><span>Тестування та запуск</span></div>
+</div>
+</section>
+<div class="rule"></div>
+<section>
+<div class="eyebrow">Вартість</div>
+<div class="pricing">
+<article class="price-card main"><div class="ptitle">Новий квіз</div><div class="pprice">€300</div><p class="pdesc">Розробка з нуля: логіка, дизайн, верстка, встановлення та базові інтеграції.</p></article>
+<article class="price-card"><div class="ptitle">Копія / адаптація</div><div class="pprice">€100</div><p class="pdesc">На базі готового квізу: інший бренд, дизайн, тексти або мова.</p></article>
+</div>
+<p class="note">* Стандартні інтеграції — за наявності доступів і технічної можливості. Складні API та платні сервіси оцінюються окремо.</p>
+</section>
+<div class="rule"></div>
+<section>
+<div class="eyebrow">Приклади реалізованих проєктів</div>
+<div class="examples"><a class="example" href="https://zim-group.com.ua/kolibri-quiz-2" target="_blank" rel="noopener noreferrer">Kolibri <span>↗</span></a><a class="example" href="https://zim-group.com.ua/hvoya-quiz-2" target="_blank" rel="noopener noreferrer">Hvoya <span>↗</span></a><a class="example" href="https://zim-group.com.ua/pa-quiz-01" target="_blank" rel="noopener noreferrer">Paradise Avenue <span>↗</span></a></div>
+</section>
+<footer class="footer"><strong>ZIM GROUP</strong><span>Розробка та запуск digital-рішень</span></footer>
+</main>
+</body>
+</html>
